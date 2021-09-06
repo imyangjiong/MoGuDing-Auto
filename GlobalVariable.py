@@ -21,7 +21,18 @@ headers = {
 version = "20210826"
 
 # 环境变量
-PERSONAL_INFORMATION = os.environ.get("PERSONAL_INFORMATION",'')
+PERSONAL_INFORMATION = os.environ.get("PERSONAL_INFORMATION",'{
+    "phone":"18050728224", 
+    "password": "Yangjiong010316", 
+    "device": "Android",
+    "token": "",
+    "country": "中国",
+    "province": "福建省",
+    "city": "厦门市",
+    "address": "中国福建省厦门市集美区厦门软件职业技术学院",
+    "latitude": "118.075064",
+    "longitude": "24.615923"
+  }')
 
 SERVERPUSHKEY = os.environ.get("SERVERPUSHKEY", "")  # Server酱推送
 TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "")  # Telegram推送服务Token
